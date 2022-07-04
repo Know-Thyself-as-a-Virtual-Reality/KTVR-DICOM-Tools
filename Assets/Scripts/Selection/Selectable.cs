@@ -9,6 +9,9 @@ using System.IO;
 /// </summary>
 public class Selectable : MonoBehaviour
 {
+    public SelectionManager selectionManager;
+
+
     [HideInInspector]
     public UnityEvent setSelectionFalseEvent;
     [HideInInspector]
@@ -37,7 +40,6 @@ public class Selectable : MonoBehaviour
     public float threshold = 0.5f;
     public float scaleChangePerFrame = 0.015f;
 
-    private SelectionManager selectionManager;
 
     void Awake()
     {
@@ -48,7 +50,6 @@ public class Selectable : MonoBehaviour
 
         maxFileNum = fnames.Count;
         indexOf_currxml = fnames.IndexOf(genericloader.getCurrxml());
-        selectionManager = GameObject.FindGameObjectWithTag("SelectionManager").GetComponent<SelectionManager>();
     }
 
     private void Update()
@@ -86,7 +87,7 @@ public class Selectable : MonoBehaviour
         }
         else if (OVRInput.Get(OVRInput.RawAxis2D.RThumbstick).y < -threshold)
         {
-            genericloader.volScale -= scaleChangePerFrame;
+            genericloader.volScale = Mathf.Max(genericloader.volScale - scaleChangePerFrame, 0.01f);
         }
     }
 
@@ -149,6 +150,7 @@ public class Selectable : MonoBehaviour
         if (!wasIndexPressed && OVRInput.Get(OVRInput.RawButton.RIndexTrigger))
         {
             wasIndexPressed = true;
+            Debug.Log("I got pressed");
         }
         else if (wasIndexPressed && !OVRInput.Get(OVRInput.RawButton.RIndexTrigger))
         {
