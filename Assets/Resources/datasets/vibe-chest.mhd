@@ -1,0 +1,13 @@
+ObjectType = Image
+NDims = 3
+BinaryData = True
+BinaryDataByteOrderMSB = False
+CompressedData = False
+TransformMatrix = 1 0 0 0 1 0 0 0 1
+Offset = 0 0 0
+CenterOfRotation = 0 0 0
+ElementSpacing = 0.968627 0.635294 0.498039
+DimSize = 256 256 256
+AnatomicalOrientation = ???
+ElementType = MET_UCHAR
+ElementDataFile = vibe-chest.raw
