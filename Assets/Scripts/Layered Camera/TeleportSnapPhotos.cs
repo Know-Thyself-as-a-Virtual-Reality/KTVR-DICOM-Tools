@@ -24,10 +24,10 @@ public class TeleportSnapPhotos : MonoBehaviour
 
     private GameObject teleportTo;
 
-    public string PhotoDirectory;
+    public string outputPhotoDirectory;
     public void OpenExplorer()
     {
-        PhotoDirectory = EditorUtility.OpenFolderPanel("Choose Directory", "", "");
+        outputPhotoDirectory = EditorUtility.OpenFolderPanel("Choose Directory", "", "");
         SetCounterVar();
     }
 
@@ -133,14 +133,14 @@ public class TeleportSnapPhotos : MonoBehaviour
     // Counts how many photos are in the directory, sets counter to be that number
     private void SetCounterVar()
     {
-        if (PhotoDirectory == null || PhotoDirectory == "")
+        if (outputPhotoDirectory == null || outputPhotoDirectory == "")
         {
-            PhotoDirectory = Application.dataPath + "/Resources";
+            outputPhotoDirectory = Application.dataPath + "/Resources";
         }
 
-        Debug.Log(PhotoDirectory);
+        Debug.Log(outputPhotoDirectory);
 
-        DirectoryInfo dir = new DirectoryInfo(PhotoDirectory);
+        DirectoryInfo dir = new DirectoryInfo(outputPhotoDirectory);
         FileInfo[] info = dir.GetFiles("*.png");
         counter = info.Length%(LayerList.Length+1);
 
@@ -189,7 +189,7 @@ public class TeleportSnapPhotos : MonoBehaviour
 
         // save in memory
         //string filename = fileName(Convert.ToInt32(imageOverview.width), Convert.ToInt32(imageOverview.height));
-        string path = PhotoDirectory + "/" + filename;
+        string path = outputPhotoDirectory + "/" + filename;
         //FileInfo file = new FileInfo(path);
         //file.Directory.Create();
         System.IO.File.WriteAllBytes(path, bytes);
