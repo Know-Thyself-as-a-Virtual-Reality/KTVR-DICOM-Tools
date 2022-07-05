@@ -16,8 +16,10 @@ For tutorials, check out all the tutorials on our website:
 
 [KTVR Website](https://www.knowthyself.ualberta.ca/technical-resources/)
 
-## Requirements
-__Unity version 2019.3.4__ (It may work for different versions, but we are not maintaining on different versions of Unity)
+## Prerequisites
+
+    Unity 2019.3.4 (It may work for different versions, but we are not maintaining on different versions of Unity)
+    Oculus
 
 When you have the project downloaded, open it in Unity Hub and have fun!
 
