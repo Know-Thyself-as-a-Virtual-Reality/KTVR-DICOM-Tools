@@ -17,9 +17,9 @@ For tutorials, check out all the tutorials on our website:
 [KTVR Website](https://www.knowthyself.ualberta.ca/technical-resources/)
 
 ## Requirements
-__Unity version 2019.3.4__ (It may work for different versions, but we are not maintaining on different versions of Unity.)
+__Unity version 2019.3.4__ (It may work for different versions, but we are not maintaining on different versions of Unity)
 
-When you have the project downloaded, open it in Unity Hub and have fun!`
+When you have the project downloaded, open it in Unity Hub and have fun!
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
