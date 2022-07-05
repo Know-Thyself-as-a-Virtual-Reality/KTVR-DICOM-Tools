@@ -1,6 +1,6 @@
 # KTVR-DICOM-Tools
 
-KTVR-DICOM-Tools is  a VR Unity project with tools we wrote for DICOM images
+KTVR-DICOM-Tools is  a VR Unity project with tools to import DICOM data into Unity. We also have tools that allow you to manipulate the data in VR in real time.
 
 ## Installation
 
