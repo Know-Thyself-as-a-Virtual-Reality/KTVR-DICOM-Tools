@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Created by Marilene Oliver, Walter Ostrander
+ * https://github.com/Know-Thyself-as-a-Virtual-Reality/KTVR-DICOM-Tools
+ */
+
 /// <summary>
 /// keeps track of whats selected at a given moment
 /// </summary>

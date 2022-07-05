@@ -4,6 +4,11 @@ using UnityEngine;
 using UnityEngine.Events;
 using System.IO;
 
+/*
+ * Created by Marilene Oliver, Walter Ostrander
+ * https://github.com/Know-Thyself-as-a-Virtual-Reality/KTVR-DICOM-Tools
+ */
+
 /// <summary>
 /// Marks the attached dataset as selectable, selection manager only allows one to be selected at a time
 /// </summary>

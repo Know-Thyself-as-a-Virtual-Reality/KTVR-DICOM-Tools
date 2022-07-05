@@ -7,6 +7,12 @@ using System.Text;
 using System.Xml;
 using System.Text.RegularExpressions;
 
+/*
+ * Created by Kumaradevan Punithakumar, 
+ * Modified by Marilene Oliver, Walter Ostrander
+ * https://github.com/Know-Thyself-as-a-Virtual-Reality/KTVR-DICOM-Tools
+ */
+
 public struct MHDHeaderGeneric
 {
 	public int[] dims;

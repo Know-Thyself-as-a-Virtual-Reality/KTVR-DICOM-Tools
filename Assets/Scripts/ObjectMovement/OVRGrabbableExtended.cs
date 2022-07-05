@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+/*
+ * Created by Marilene Oliver, Walter Ostrander
+ * https://github.com/Know-Thyself-as-a-Virtual-Reality/KTVR-DICOM-Tools
+ */
+
 [System.Serializable]
 public class GrabEndEvent : UnityEvent<Vector3, Vector3>
 {

@@ -4,6 +4,10 @@ using Random = UnityEngine.Random;
 using UnityEngine.Events;
 using System;
 
+/*
+ * Created by Marilene Oliver, Walter Ostrander
+ * https://github.com/Know-Thyself-as-a-Virtual-Reality/KTVR-DICOM-Tools
+ */
 
 // Needs to be used with OVRGrabbableExtended
 // after being released from a grab, an object will wait (StartFloatingAwayIn) seconds, then float away in a random direction for (StartComingBackIn - StartFloatingAwayIn) seconds

@@ -7,6 +7,11 @@ using UnityEditor;
 using System;
 using System.IO;
 
+/*
+ * Created by Marilene Oliver, Walter Ostrander
+ * https://github.com/Know-Thyself-as-a-Virtual-Reality/KTVR-DICOM-Tools
+ */
+
 /// <summary>
 /// This script will teleport the camera to the center eye of The OVRCamerarig and take a photo
 /// </summary>

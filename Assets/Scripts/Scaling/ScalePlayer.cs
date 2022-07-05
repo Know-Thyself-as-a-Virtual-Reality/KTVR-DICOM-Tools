@@ -3,7 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class ScalingTests : MonoBehaviour
+/*
+ * Created by Marilene Oliver, Walter Ostrander, Jiayi Yi
+ * https://github.com/Know-Thyself-as-a-Virtual-Reality/KTVR-DICOM-Tools
+ */
+
+public class ScalePlayer : MonoBehaviour
 {
     [SerializeField]
     private OVRInput.Controller mainController;

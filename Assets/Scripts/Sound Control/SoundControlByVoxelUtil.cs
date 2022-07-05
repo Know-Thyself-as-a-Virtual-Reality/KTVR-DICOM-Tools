@@ -5,6 +5,11 @@ using UnityEngine.Events;
 using System.IO;
 using System;
 
+/*
+ * Created by Marilene Oliver, Scott Smallwood, Walter Ostrander
+ * https://github.com/Know-Thyself-as-a-Virtual-Reality/KTVR-DICOM-Tools
+ */
+
 /// <summary>
 /// This is a utility script, that makes the voxel colours available to any script. Meaning you can use it to help you figure out which voxel you are closest to
 /// inside the dataset and get the information about that voxel. It was designed to be used to modify the pitch of a sound

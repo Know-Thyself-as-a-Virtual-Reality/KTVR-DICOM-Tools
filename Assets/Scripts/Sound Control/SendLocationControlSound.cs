@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Created by Marilene Oliver, Scott Smallwood, Walter Ostrander
+ * https://github.com/Know-Thyself-as-a-Virtual-Reality/KTVR-DICOM-Tools
+ */
+
 /// <summary>
 /// controls the sound based off the the location inside the body we are
 /// </summary>

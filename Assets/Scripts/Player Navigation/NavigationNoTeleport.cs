@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Created by Marilene Oliver, Jiayi Yi
+ * https://github.com/Know-Thyself-as-a-Virtual-Reality/KTVR-DICOM-Tools
+ */
+
 public class NavigationNoTeleport : MonoBehaviour
 {
     [SerializeField]
