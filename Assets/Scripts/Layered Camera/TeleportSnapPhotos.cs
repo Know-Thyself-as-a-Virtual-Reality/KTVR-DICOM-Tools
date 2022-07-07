@@ -182,7 +182,7 @@ public class TeleportSnapPhotos : MonoBehaviour
         RenderTexture currentRT = RenderTexture.active;
         RenderTexture.active = camera.targetTexture;
         camera.Render();
-        camera.fieldOfView = 60;
+        //camera.fieldOfView = 60;
         Texture2D imageOverview = new Texture2D(camera.targetTexture.width, camera.targetTexture.height, TextureFormat.RGBAFloat, false);
         //Texture2D imageOverview = new Texture2D(camera.targetTexture.width, camera.targetTexture.height, TextureFormat.ASTC_HDR_12x12, false);
         imageOverview.ReadPixels(new Rect(0, 0, camera.targetTexture.width, camera.targetTexture.height), 0, 0);
