@@ -15,12 +15,16 @@ using System.IO;
 public class Selectable : MonoBehaviour
 {
     public SelectionManager selectionManager;
+    //[HideInInspector]
+    //public UnityEvent OnSelect;
+    //[HideInInspector]
+    //public UnityEvent OnDeSelect;
 
 
     [HideInInspector]
-    public UnityEvent setSelectionFalseEvent;
+    public UnityEvent OnDeSelect;
     [HideInInspector]
-    public UnityEvent onInsideEvent;
+    public UnityEvent OnSelect;
     private bool isInside = false;
 
     private bool wasIndexPressed = false;
@@ -166,8 +170,8 @@ public class Selectable : MonoBehaviour
             // Tells the selection manager that this object has been selected
             if (isSelected)
             {
-                onInsideEvent.Invoke();
                 selectionManager.OnSelection(this);
+                OnSelect.Invoke();
             }
         }
     }
@@ -212,6 +216,6 @@ public class Selectable : MonoBehaviour
     public void SetSelectionFalse()
     {
         isSelected = false;
-        setSelectionFalseEvent.Invoke();
+        OnDeSelect.Invoke();
     }
 }
