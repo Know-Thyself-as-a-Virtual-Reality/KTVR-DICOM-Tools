@@ -23,6 +23,7 @@ For tutorials, please see the tutorials on the KTVR website:
 ## Prerequisites
 
 - Unity 2019.3.4f1 (It may work for different versions, but we are not maintaining on different versions of Unity)
+- [Oculus Integration](https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022) Package
 - Oculus / Vive
 
 When you have the project downloaded, open it in Unity Hub and explore the many features. 
